@@ -1,0 +1,160 @@
+composer global require laravel/installer
+
+php -v
+
+laravel new blog
+
+php artisan make:controller HomeController 
+
+php artisan make:controller CursoController 
+
+php artisan migrate
+php artisan make:migration cursos
+php artisan migrate
+php artisan migrate:rollback
+php artisan migrate:rollback
+php artisan migrate
+php artisan migrate:rollback
+-- Eliminar el cursos
+php artisan migrate
+php artisan make:migration create_cursos_table
+php artisan migrate
+
+
+--Agregar la columna [avatar] en la tabla users
+
+php artisan migrate:refresh
+php artisan migrate:fresh
+
+-- Comentar una columna [avatar] en la tabla users
+-- COMANDO SOLO PARA UTILIZAR en DESARROLLO NO en Producción porque es destructivo
+php artisan migrate:fresh
+
+
+php artisan make:migration add_avatar_to_users_table
+
+$table->string('avatar')->nullable();
+
+php artisan migrate
+
+--no deseo que el avatar este al final de la tabla, entonces
+php artisan migrate:rollback
+
+$table->string('avatar')->nullable()->after('email');
+php artisan migrate
+
+
+composer require doctrine/dbal
+php artisan make:migration cambiar_propiedades_to_users_table
+
+php artisan migrate
+php artisan migrate:rollback
+
+
+php artisan make:model Curso
+
+
+--eloquent
+
+php artisan tinker
+
+>>> q
+
+php artisan tinker
+
+
+>>> use App\Models\Curso;
+>>> $curso = new Curso;
+=> App\Models\Curso {#3503}
+>>> $curso->name = 'Laravel';
+=> "Laravel"
+>>> $curso->descripcion = "El mejor framework de PHP";
+=> "El mejor framework de PHP"
+>>> $curso;
+=> App\Models\Curso {#3503
+     name: "Laravel",
+     descripcion: "El mejor framework de PHP",
+   }
+>>> $curso->save();
+=> true
+>>> $curso;
+=> App\Models\Curso {#3503
+     name: "Laravel",
+     descripcion: "El mejor framework de PHP",
+     updated_at: "2022-02-22 22:15:25",
+     created_at: "2022-02-22 22:15:25",
+     id: 1,
+   }
+>>> $curso->descripcion = "El mejor Framework del mundo";
+=> "El mejor Framework del mundo"
+>>> $curso;
+=> App\Models\Curso {#3503
+     name: "Laravel",
+     descripcion: "El mejor Framework del mundo",
+     updated_at: "2022-02-22 22:15:25",
+     created_at: "2022-02-22 22:15:25",
+     id: 1,
+   }
+>>> $curso->save();
+=> true
+>>> $curso;
+=> App\Models\Curso {#3503
+     name: "Laravel",
+     descripcion: "El mejor Framework del mundo",
+     updated_at: "2022-02-22 22:19:27",
+     created_at: "2022-02-22 22:15:25",
+     id: 1,
+   }
+>>> $curso2 = new Curso;
+=> App\Models\Curso {#3828}
+>>> $curso2->name = "vue";
+=> "vue"
+>>> $curso2->descripcion = "xdxdxdxd";
+=> "xdxdxdxd"
+>>> $curso2
+=> App\Models\Curso {#3828
+     name: "vue",
+     descripcion: "xdxdxdxd",
+   }
+>>> $curso2->save();
+=> true
+>>> $curso2
+=> App\Models\Curso {#3828
+     name: "vue",
+     descripcion: "xdxdxdxd",
+     updated_at: "2022-02-22 22:21:20",
+     created_at: "2022-02-22 22:21:20",
+     id: 2,
+   }
+>>> q
+
+-- Agregar en Curso
+protected $table = "users";
+
+PS D:\xampp\htdocs\blog> php artisan tinker
+Psy Shell v0.11.1 (PHP 8.1.2 — cli) by Justin Hileman
+>>> use App\Models\Curso;
+>>> $usuario = new Curso;
+=> App\Models\Curso {#3503}
+>>> $usuario->name = "Misael";
+=> "Misael"
+>>> $usuario->email = "misael@gmail.com"
+=> "misael@gmail.com"
+>>> $usuario->password = "12345678";
+=> "12345678"
+>>> $usuario
+=> App\Models\Curso {#3503
+     name: "Misael",
+     email: "misael@gmail.com",
+     password: "12345678",
+   }
+>>> $usuario->save();
+=> true
+>>> q
+
+-- ELIMINAR en Curso
+protected $table = "users";
+
+
+
+
