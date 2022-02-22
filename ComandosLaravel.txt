@@ -4,9 +4,9 @@ php -v
 
 laravel new blog
 
-php artisan make:controller HomeController 
+php artisan make:controller HomeController
 
-php artisan make:controller CursoController 
+php artisan make:controller CursoController
 
 php artisan migrate
 php artisan make:migration cursos
@@ -154,6 +154,36 @@ Psy Shell v0.11.1 (PHP 8.1.2 — cli) by Justin Hileman
 
 -- ELIMINAR en Curso
 protected $table = "users";
+
+-- Eliminar las tablas de la DB
+php artisan migrate:reset
+
+
+-- Escribir en el DatabaseSeeder.php
+
+--después
+php artisan migrate:fresh
+php artisan db:seed
+
+--Agregar dos registros curso2 y curso3
+php artisan migrate:fresh
+php artisan db:seed
+
+
+--Pasar lo de DatabaseSeeder.php a CursoSeeder.php
+php artisan make:seeder CursoSeeder
+
+php artisan migrate:fresh
+// No hace nada
+php artisan db:seed
+
+Agregar en DatabaseSeeder.php
+$this->call(CursoSeeder::class);
+
+php artisan migrate:fresh --seed
+
+--O también
+php artisan migrate --seed
 
 
 
