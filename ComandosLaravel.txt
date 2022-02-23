@@ -2031,5 +2031,10 @@ http://blog.test/cursos?page=3
 
 
 
+un tip para los que no sepan a la hora de la creación de un controlador le ponen a lo último -r para evitar estar escribiendo los métodos por lo tanto el comando es php artisan make:controller NameController -r
+    -> el -r hace referencia a los recursos que usualmente se usan en un CRUD y te crea los métodos index,create,store,update,showedit,destroy
 
+
+-- Cosas de Laravel en Español
+https://github.com/Laraveles/spanish
 
