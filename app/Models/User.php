@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -41,4 +43,39 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    protected function name() : Attribute
+    {
+        return new Attribute(
+
+            // // Accesor
+            // // No modifica el valor de la BD
+            // get: function($value) {
+            //     return ucwords($value);
+            // },
+            get: fn($value) => ucwords($value),
+
+            // // Mutador
+            // // Si modifica el valor de la BD
+            // set: function($value) {
+            //     return strtolower($value);
+            // }
+
+            set: fn($value) => strtolower($value)
+
+        );
+    }
+
+    // // Accesores en Laravel 8
+    // public function getNameAtrribute($value) {
+    //     return ucwords($value);
+    // }
+
+    // // Definir un mutador en Laravel 8
+    // public function setNameAtrribute($value) {
+    //     $this->attributes['name'] = strtolower($value);
+    // }
+
+
 }
