@@ -2038,3 +2038,6 @@ un tip para los que no sepan a la hora de la creación de un controlador le pone
 -- Cosas de Laravel en Español
 https://github.com/Laraveles/spanish
 
+-- Crear un Form Request
+php artisan make:request StoreCurso
+
