@@ -197,3 +197,1782 @@ php artisan migrate:fresh --seed
 php artisan migrate:fresh --seed
 
 
+
+-- Consultas con eloquent
+php artisan tinker
+Psy Shell v0.11.1 (PHP 8.1.2 — cli) by Justin Hileman
+>>> use App\Models\Curso;
+>>> $cursos = Curso::all();
+=> Illuminate\Database\Eloquent\Collection {#4481
+     all: [
+       App\Models\Curso {#4483
+         id: 1,
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4484
+         id: 2,
+         name: "Illo quae amet delectus sed.",
+         descripcion: "Dolor nam et ab quas soluta rem. Error voluptate consectetur amet. Mollitia distinctio culpa suscipit ad molestiae. Aliquam ratione recusandae ea quod error nulla.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4485
+         id: 3,
+         name: "Non blanditiis tempore voluptatem accusantium sunt a.",
+         descripcion: "Minima rerum veritatis et dolorem quaerat ipsam in. Est error quam possimus temporibus quibusdam voluptatem. Iste eos et non nostrum. Suscipit corporis omnis earum deserunt autem et recusandae.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4486
+         id: 4,
+         name: "Et ipsa nostrum aut perspiciatis.",
+         descripcion: "Numquam laudantium voluptatum at et temporibus. Natus atque eum vel enim suscipit corrupti ex ut. Non tenetur adipisci magnam consequuntur.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4487
+         id: 5,
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4488
+         id: 6,
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4489
+         id: 7,
+         name: "Ratione nobis dolorem perferendis ut laborum autem ut.",
+         descripcion: "Velit deleniti et dolor nihil veritatis odio qui. Voluptate quaerat repellendus fugit sint.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4490
+         id: 8,
+         name: "Ut quidem nisi eius.",
+         descripcion: "Dicta sint illo sint placeat saepe asperiores quidem eaque. Facere deleniti veritatis aut voluptas quia animi et optio. Quasi fugit sit alias at. Laudantium quo et quis et qui ipsum.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4491
+         id: 9,
+         name: "Et doloribus eligendi aspernatur laboriosam est.",
+         descripcion: "Eum mollitia esse a occaecati ut omnis. Et quia ipsam nisi voluptates. Repellat nobis nam tenetur earum qui dolor similique qui.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4492
+         id: 10,
+         name: "Ipsam nihil dolorum provident neque.",
+         descripcion: "Unde qui non enim repellat enim fugiat amet. Ut in est ab consequatur. Quis neque voluptatum eius eum rerum pariatur optio. Et tempora ad et qui quasi est.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4493
+         id: 11,
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4494
+         id: 12,
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4495
+         id: 13,
+         name: "Facere aliquam optio enim sequi minima.",
+         descripcion: "Optio est rem numquam tempora vel non. Illo officia doloribus ex ut inventore nisi facere. Molestiae ipsa consequatur dicta necessitatibus consequatur dignissimos velit et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4496
+         id: 14,
+         name: "Ex error non deleniti rerum officiis aut.",
+         descripcion: "Eligendi nihil unde voluptatem eos. Ducimus praesentium pariatur nihil eveniet asperiores. Ut nihil sint molestiae libero. Ab quisquam minus natus quisquam est voluptatem non.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4497
+         id: 15,
+         name: "Ipsum non et earum quis.",
+         descripcion: "Sapiente quis similique deserunt facilis iusto unde. Voluptatem a quia nesciunt temporibus.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4498
+         id: 16,
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4499
+         id: 17,
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4500
+         id: 18,
+         name: "Quisquam eligendi asperiores et est.",
+         descripcion: "Porro odit nulla sed et neque. Optio architecto iure et et et.
+Tempore cum dignissimos maxime voluptatem dolorum provident. Vitae ut deleniti harum odit beatae consequatur nulla in.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4501
+         id: 19,
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4502
+         id: 20,
+         name: "Non ullam quae velit ipsam veniam minus aut.",
+         descripcion: "Voluptatibus sapiente ut molestiae quos et numquam ad. Qui aut
+aut eius tempora dolores commodi fugit. Numquam voluptatem iste fugit suscipit.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4503
+         id: 21,
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4504
+         id: 22,
+         name: "Similique nostrum voluptatibus quo qui distinctio mollitia.",
+         descripcion: "Asperiores occaecati quidem et. In qui dolorem culpa rerum tempora ea. Assumenda asperiores recusandae aut autem nulla autem.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4505
+         id: 23,
+         name: "Laboriosam dolor molestiae possimus fugiat.",
+         descripcion: "Doloribus expedita dolores rerum. Impedit qui ullam voluptas itaque. Nam sunt magni adipisci et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4506
+         id: 24,
+         name: "Praesentium velit odit asperiores saepe deserunt nam occaecati.",
+         descripcion: "Quibusdam et ea est aspernatur. Cumque aut officiis quisquam doloribus consequuntur quia est et. Maiores fugiat esse qui dolorem laborum sed velit itaque.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4507
+         id: 25,
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4508
+         id: 26,
+         name: "Nisi dolorum et omnis labore facilis nulla dolorem sint.",
+         descripcion: "Nam ut aperiam quos aut culpa. Et et magnam exercitationem perferendis itaque maxime. Modi laudantium aut illum sed.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4509
+         id: 27,
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4510
+         id: 28,
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4511
+         id: 29,
+         name: "Nulla quam quidem nisi autem in voluptatem accusamus.",
+         descripcion: "Ipsa aliquid sint facilis perspiciatis. Explicabo deleniti qui
+dolore repellendus deleniti consequatur. Magnam culpa dicta facere ut. Dolore vel molestias nesciunt sed consequatur aut harum.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4512
+         id: 30,
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4513
+         id: 31,
+         name: "Tempora et omnis eos.",
+         descripcion: "Ut quos libero molestias et voluptas voluptatem mollitia. At beatae natus ipsum quia quasi ut non. Placeat sed ut ut sequi aut.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4514
+         id: 32,
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4515
+         id: 33,
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4516
+         id: 34,
+         name: "Eligendi nesciunt molestias ducimus eaque necessitatibus corrupti.",
+         descripcion: "Ea tenetur rerum ut ut deleniti aliquam. Temporibus sit molestiae modi ut ducimus et. Dolore consequuntur rerum placeat. Excepturi sint facere dolorem pariatur quasi maiores.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4517
+         id: 35,
+         name: "Aut sint ut rerum voluptatem ipsam cum.",
+         descripcion: "Dolorem minima sit animi qui assumenda. Optio voluptatibus sapiente sed sint nemo. Numquam quia error quo vel consequatur atque. Consequuntur beatae
+nisi error officia occaecati laboriosam nostrum dicta. Voluptates dolor dolor excepturi unde nobis omnis eveniet omnis.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4518
+         id: 36,
+         name: "Voluptatum dolores velit voluptates rem nihil et quis.",
+         descripcion: "Dicta quo et iure. Sint quia suscipit necessitatibus ea illum amet itaque ipsa. Nulla voluptate deleniti quasi voluptas consequatur aut.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4519
+         id: 37,
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4520
+         id: 38,
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4521
+         id: 39,
+         name: "Non quo suscipit quaerat ipsum reiciendis.",
+         descripcion: "Repudiandae ullam ducimus facere in. Ea minus accusantium qui ipsa maiores numquam inventore. Voluptatum et nesciunt natus illum enim.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4522
+         id: 40,
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4523
+         id: 41,
+         name: "Optio optio veritatis natus ea autem quidem.",
+         descripcion: "Voluptatem non illo quidem aliquam adipisci et. Aut iure molestias aliquid quia quam dolorem sint soluta. Omnis est voluptatibus quia ad aut excepturi maxime. Voluptatem nobis labore necessitatibus minus qui. Voluptas a est asperiores
+aliquam hic ut omnis impedit.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4524
+         id: 42,
+         name: "Molestiae vel perspiciatis magni in voluptate minima deleniti.",
+         descripcion: "Architecto perspiciatis pariatur at rerum error et suscipit. Voluptas ducimus sed quae maiores eius. Distinctio commodi quas aut deserunt.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4525
+         id: 43,
+         name: "Incidunt velit ut ea dolore incidunt non.",
+         descripcion: "Impedit nam eum omnis veniam ad. Recusandae quis velit dolore illo laudantium qui. Dolor harum et ut corporis qui sit tenetur.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4526
+         id: 44,
+         name: "Doloremque assumenda distinctio asperiores optio maxime est.",
+         descripcion: "Esse quo corporis consequatur aliquid itaque maxime. Optio quae tenetur qui fuga non est consequatur. Ut quia ad dolor. Qui odit nesciunt consequatur blanditiis laboriosam doloremque quas.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4527
+         id: 45,
+         name: "Sit id iure similique dicta enim.",
+         descripcion: "Recusandae aut qui consequatur vel natus aut. Repellat iusto corporis harum ut dolor. Eveniet voluptates consequatur provident.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4528
+         id: 46,
+         name: "Quia quis id occaecati commodi dolores architecto harum deleniti.",
+         descripcion: "Et harum assumenda minus et. Sapiente corporis delectus laudantium id cum eveniet. Nihil quo vel minus tempore aperiam inventore et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4529
+         id: 47,
+         name: "Facere aperiam laborum officiis sit sit veniam impedit.",
+         descripcion: "Facere rerum cupiditate soluta quo sed. Est nobis laudantium eius rerum atque quia asperiores. Aliquam voluptas voluptatem ut corporis ipsum culpa. Sint vero rerum ducimus nisi incidunt et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4530
+         id: 48,
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4531
+         id: 49,
+         name: "Ipsum neque similique totam voluptatem qui aliquid aperiam autem.",
+         descripcion: "Nulla et dicta eum. Quidem consequatur ipsa officia maiores facere id. Eum excepturi perferendis qui.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4532
+         id: 50,
+         name: "Culpa quia nostrum dicta libero reiciendis et tempore.",
+         descripcion: "Excepturi sequi itaque totam officia doloribus neque quibusdam
+harum. Et qui facilis voluptatibus optio nisi aperiam. Officia temporibus suscipit provident voluptas.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>> $cursos = Curso::where('categoria', 'Diseño web')->get();
+=> Illuminate\Database\Eloquent\Collection {#4452
+     all: [
+       App\Models\Curso {#4454
+         id: 1,
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4455
+         id: 5,
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4456
+         id: 6,
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4457
+         id: 11,
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4458
+         id: 12,
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4459
+         id: 16,
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4460
+         id: 17,
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4461
+         id: 19,
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4462
+         id: 21,
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4463
+         id: 25,
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4464
+         id: 27,
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4465
+         id: 28,
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4466
+         id: 30,
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4467
+         id: 32,
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4476
+         id: 33,
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4475
+         id: 37,
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4474
+         id: 38,
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4473
+         id: 40,
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4472
+         id: 48,
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>> $cursos = Curso::where('categoria', 'Diseño web')->orderBy('id', 'desc')->get();
+=> Illuminate\Database\Eloquent\Collection {#4508
+     all: [
+       App\Models\Curso {#4506
+         id: 48,
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4505
+         id: 40,
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4504
+         id: 38,
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4503
+         id: 37,
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4502
+         id: 33,
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4501
+         id: 32,
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4500
+         id: 30,
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4499
+         id: 28,
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4498
+         id: 27,
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4497
+         id: 25,
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4496
+         id: 21,
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4495
+         id: 19,
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4494
+         id: 17,
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4493
+         id: 16,
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4492
+         id: 12,
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4491
+         id: 11,
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4490
+         id: 6,
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4489
+         id: 5,
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4488
+         id: 1,
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+     ],
+   }
+>>> $cursos = Curso::where('categoria', 'Diseño web')->orderBy('name', 'asc')->get();
+=> Illuminate\Database\Eloquent\Collection {#4530
+     all: [
+       App\Models\Curso {#4529
+         id: 21,
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4509
+         id: 38,
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4525
+         id: 33,
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#3503
+         id: 5,
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4528
+         id: 40,
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4510
+         id: 1,
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4511
+         id: 32,
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4512
+         id: 17,
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4513
+         id: 19,
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4514
+         id: 11,
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4515
+         id: 28,
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4516
+         id: 27,
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4518
+         id: 30,
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:43",
+         updated_at: "2022-02-23 00:05:43",
+       },
+       App\Models\Curso {#4519
+         id: 37,
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4520
+         id: 25,
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4517
+         id: 6,
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:40",
+         updated_at: "2022-02-23 00:05:40",
+       },
+       App\Models\Curso {#4522
+         id: 12,
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4521
+         id: 16,
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:41",
+         updated_at: "2022-02-23 00:05:41",
+       },
+       App\Models\Curso {#4487
+         id: 48,
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>> $cursos = Curso::where('categoria', 'Diseño web')->orderBy('name', 'asc')->first();
+=> App\Models\Curso {#4504
+     id: 21,
+     name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+     descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim
+libero est voluptas.",
+     categoria: "Diseño web",
+     created_at: "2022-02-23 00:05:42",
+     updated_at: "2022-02-23 00:05:42",
+   }
+>>> $cursos = Curso::select('name','descripcion')->get();
+=> Illuminate\Database\Eloquent\Collection {#4456
+     all: [
+       App\Models\Curso {#4459
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+       },
+       App\Models\Curso {#4460
+         name: "Illo quae amet delectus sed.",
+         descripcion: "Dolor nam et ab quas soluta rem. Error voluptate consectetur amet. Mollitia distinctio culpa suscipit ad molestiae. Aliquam ratione recusandae ea quod error nulla.",
+       },
+       App\Models\Curso {#4457
+         name: "Non blanditiis tempore voluptatem accusantium sunt a.",
+         descripcion: "Minima rerum veritatis et dolorem quaerat ipsam in. Est error quam possimus temporibus quibusdam voluptatem. Iste eos et non nostrum. Suscipit corporis omnis earum deserunt autem et recusandae.",
+       },
+       App\Models\Curso {#4462
+         name: "Et ipsa nostrum aut perspiciatis.",
+         descripcion: "Numquam laudantium voluptatum at et temporibus. Natus atque eum vel enim suscipit corrupti ex ut. Non tenetur adipisci magnam consequuntur.",
+       },
+       App\Models\Curso {#4461
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+       },
+       App\Models\Curso {#4486
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+       },
+       App\Models\Curso {#4485
+         name: "Ratione nobis dolorem perferendis ut laborum autem ut.",
+         descripcion: "Velit deleniti et dolor nihil veritatis odio qui. Voluptate quaerat repellendus fugit sint.",
+       },
+       App\Models\Curso {#4484
+         name: "Ut quidem nisi eius.",
+         descripcion: "Dicta sint illo sint placeat saepe asperiores quidem eaque. Facere deleniti veritatis aut voluptas quia animi et optio. Quasi fugit sit alias at. Laudantium quo et quis et qui ipsum.",
+       },
+       App\Models\Curso {#4483
+         name: "Et doloribus eligendi aspernatur laboriosam est.",
+         descripcion: "Eum mollitia esse a occaecati ut omnis. Et quia ipsam nisi voluptates. Repellat nobis nam tenetur earum qui dolor similique qui.",
+       },
+       App\Models\Curso {#4436
+         name: "Ipsam nihil dolorum provident neque.",
+         descripcion: "Unde qui non enim repellat enim fugiat amet. Ut in est ab consequatur. Quis neque voluptatum eius eum rerum pariatur optio. Et tempora ad et qui quasi est.",
+       },
+       App\Models\Curso {#4439
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+       },
+       App\Models\Curso {#4437
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+       },
+       App\Models\Curso {#4451
+         name: "Facere aliquam optio enim sequi minima.",
+         descripcion: "Optio est rem numquam tempora vel non. Illo officia doloribus ex ut inventore nisi facere. Molestiae ipsa consequatur dicta necessitatibus consequatur dignissimos velit et.",
+       },
+       App\Models\Curso {#4450
+         name: "Ex error non deleniti rerum officiis aut.",
+         descripcion: "Eligendi nihil unde voluptatem eos. Ducimus praesentium pariatur nihil eveniet asperiores. Ut nihil sint molestiae libero. Ab quisquam minus natus quisquam est voluptatem non.",
+       },
+       App\Models\Curso {#4449
+         name: "Ipsum non et earum quis.",
+         descripcion: "Sapiente quis similique deserunt facilis iusto unde. Voluptatem a quia nesciunt temporibus.",
+       },
+       App\Models\Curso {#4448
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+       },
+       App\Models\Curso {#4447
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+       },
+       App\Models\Curso {#4446
+         name: "Quisquam eligendi asperiores et est.",
+         descripcion: "Porro odit nulla sed et neque. Optio architecto iure et et et.
+Tempore cum dignissimos maxime voluptatem dolorum provident. Vitae ut deleniti harum odit beatae consequatur nulla in.",
+       },
+       App\Models\Curso {#4445
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+       },
+       App\Models\Curso {#4444
+         name: "Non ullam quae velit ipsam veniam minus aut.",
+         descripcion: "Voluptatibus sapiente ut molestiae quos et numquam ad. Qui aut
+aut eius tempora dolores commodi fugit. Numquam voluptatem iste fugit suscipit.",
+       },
+       App\Models\Curso {#4443
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+       },
+       App\Models\Curso {#4442
+         name: "Similique nostrum voluptatibus quo qui distinctio mollitia.",
+         descripcion: "Asperiores occaecati quidem et. In qui dolorem culpa rerum tempora ea. Assumenda asperiores recusandae aut autem nulla autem.",
+       },
+       App\Models\Curso {#4441
+         name: "Laboriosam dolor molestiae possimus fugiat.",
+         descripcion: "Doloribus expedita dolores rerum. Impedit qui ullam voluptas itaque. Nam sunt magni adipisci et.",
+       },
+       App\Models\Curso {#3508
+         name: "Praesentium velit odit asperiores saepe deserunt nam occaecati.",
+         descripcion: "Quibusdam et ea est aspernatur. Cumque aut officiis quisquam doloribus consequuntur quia est et. Maiores fugiat esse qui dolorem laborum sed velit itaque.",
+       },
+       App\Models\Curso {#4438
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+       },
+       App\Models\Curso {#3504
+         name: "Nisi dolorum et omnis labore facilis nulla dolorem sint.",
+         descripcion: "Nam ut aperiam quos aut culpa. Et et magnam exercitationem perferendis itaque maxime. Modi laudantium aut illum sed.",
+       },
+       App\Models\Curso {#4440
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+       },
+       App\Models\Curso {#3510
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+       },
+       App\Models\Curso {#4225
+         name: "Nulla quam quidem nisi autem in voluptatem accusamus.",
+         descripcion: "Ipsa aliquid sint facilis perspiciatis. Explicabo deleniti qui
+dolore repellendus deleniti consequatur. Magnam culpa dicta facere ut. Dolore vel molestias nesciunt sed consequatur aut harum.",
+       },
+       App\Models\Curso {#4188
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+       },
+       App\Models\Curso {#4226
+         name: "Tempora et omnis eos.",
+         descripcion: "Ut quos libero molestias et voluptas voluptatem mollitia. At beatae natus ipsum quia quasi ut non. Placeat sed ut ut sequi aut.",
+       },
+       App\Models\Curso {#4292
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+       },
+       App\Models\Curso {#4435
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+       },
+       App\Models\Curso {#3828
+         name: "Eligendi nesciunt molestias ducimus eaque necessitatibus corrupti.",
+         descripcion: "Ea tenetur rerum ut ut deleniti aliquam. Temporibus sit molestiae modi ut ducimus et. Dolore consequuntur rerum placeat. Excepturi sint facere dolorem pariatur quasi maiores.",
+       },
+       App\Models\Curso {#4471
+         name: "Aut sint ut rerum voluptatem ipsam cum.",
+         descripcion: "Dolorem minima sit animi qui assumenda. Optio voluptatibus sapiente sed sint nemo. Numquam quia error quo vel consequatur atque. Consequuntur beatae
+nisi error officia occaecati laboriosam nostrum dicta. Voluptates dolor dolor excepturi unde nobis omnis eveniet omnis.",
+       },
+       App\Models\Curso {#4470
+         name: "Voluptatum dolores velit voluptates rem nihil et quis.",
+         descripcion: "Dicta quo et iure. Sint quia suscipit necessitatibus ea illum amet itaque ipsa. Nulla voluptate deleniti quasi voluptas consequatur aut.",
+       },
+       App\Models\Curso {#4468
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+       },
+       App\Models\Curso {#4477
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+       },
+       App\Models\Curso {#4478
+         name: "Non quo suscipit quaerat ipsum reiciendis.",
+         descripcion: "Repudiandae ullam ducimus facere in. Ea minus accusantium qui ipsa maiores numquam inventore. Voluptatum et nesciunt natus illum enim.",
+       },
+       App\Models\Curso {#4479
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+       },
+       App\Models\Curso {#3505
+         name: "Optio optio veritatis natus ea autem quidem.",
+         descripcion: "Voluptatem non illo quidem aliquam adipisci et. Aut iure molestias aliquid quia quam dolorem sint soluta. Omnis est voluptatibus quia ad aut excepturi maxime. Voluptatem nobis labore necessitatibus minus qui. Voluptas a est asperiores
+aliquam hic ut omnis impedit.",
+       },
+       App\Models\Curso {#4480
+         name: "Molestiae vel perspiciatis magni in voluptate minima deleniti.",
+         descripcion: "Architecto perspiciatis pariatur at rerum error et suscipit. Voluptas ducimus sed quae maiores eius. Distinctio commodi quas aut deserunt.",
+       },
+       App\Models\Curso {#3507
+         name: "Incidunt velit ut ea dolore incidunt non.",
+         descripcion: "Impedit nam eum omnis veniam ad. Recusandae quis velit dolore illo laudantium qui. Dolor harum et ut corporis qui sit tenetur.",
+       },
+       App\Models\Curso {#4469
+         name: "Doloremque assumenda distinctio asperiores optio maxime est.",
+         descripcion: "Esse quo corporis consequatur aliquid itaque maxime. Optio quae tenetur qui fuga non est consequatur. Ut quia ad dolor. Qui odit nesciunt consequatur blanditiis laboriosam doloremque quas.",
+       },
+       App\Models\Curso {#4533
+         name: "Sit id iure similique dicta enim.",
+         descripcion: "Recusandae aut qui consequatur vel natus aut. Repellat iusto corporis harum ut dolor. Eveniet voluptates consequatur provident.",
+       },
+       App\Models\Curso {#4534
+         name: "Quia quis id occaecati commodi dolores architecto harum deleniti.",
+         descripcion: "Et harum assumenda minus et. Sapiente corporis delectus laudantium id cum eveniet. Nihil quo vel minus tempore aperiam inventore et.",
+       },
+       App\Models\Curso {#4535
+         name: "Facere aperiam laborum officiis sit sit veniam impedit.",
+         descripcion: "Facere rerum cupiditate soluta quo sed. Est nobis laudantium eius rerum atque quia asperiores. Aliquam voluptas voluptatem ut corporis ipsum culpa. Sint vero rerum ducimus nisi incidunt et.",
+       },
+       App\Models\Curso {#4536
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+       },
+       App\Models\Curso {#4537
+         name: "Ipsum neque similique totam voluptatem qui aliquid aperiam autem.",
+         descripcion: "Nulla et dicta eum. Quidem consequatur ipsa officia maiores facere id. Eum excepturi perferendis qui.",
+       },
+       App\Models\Curso {#4538
+         name: "Culpa quia nostrum dicta libero reiciendis et tempore.",
+         descripcion: "Excepturi sequi itaque totam officia doloribus neque quibusdam
+harum. Et qui facilis voluptatibus optio nisi aperiam. Officia temporibus suscipit provident voluptas.",
+       },
+     ],
+   }
+>>> $cursos = Curso::select('name','descripcion')->orderBy('name','asc')->get();
+=> Illuminate\Database\Eloquent\Collection {#4518
+     all: [
+       App\Models\Curso {#4540
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+       },
+       App\Models\Curso {#4541
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+       },
+       App\Models\Curso {#4542
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+       },
+       App\Models\Curso {#4543
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+       },
+       App\Models\Curso {#4544
+         name: "Aut sint ut rerum voluptatem ipsam cum.",
+         descripcion: "Dolorem minima sit animi qui assumenda. Optio voluptatibus sapiente sed sint nemo. Numquam quia error quo vel consequatur atque. Consequuntur beatae
+nisi error officia occaecati laboriosam nostrum dicta. Voluptates dolor dolor excepturi unde nobis omnis eveniet omnis.",
+       },
+       App\Models\Curso {#4545
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+       },
+       App\Models\Curso {#4546
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+       },
+       App\Models\Curso {#4547
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+       },
+       App\Models\Curso {#4548
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+       },
+       App\Models\Curso {#4549
+         name: "Culpa quia nostrum dicta libero reiciendis et tempore.",
+         descripcion: "Excepturi sequi itaque totam officia doloribus neque quibusdam
+harum. Et qui facilis voluptatibus optio nisi aperiam. Officia temporibus suscipit provident voluptas.",
+       },
+       App\Models\Curso {#4550
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+       },
+       App\Models\Curso {#4551
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+       },
+       App\Models\Curso {#4552
+         name: "Doloremque assumenda distinctio asperiores optio maxime est.",
+         descripcion: "Esse quo corporis consequatur aliquid itaque maxime. Optio quae tenetur qui fuga non est consequatur. Ut quia ad dolor. Qui odit nesciunt consequatur blanditiis laboriosam doloremque quas.",
+       },
+       App\Models\Curso {#4553
+         name: "Eligendi nesciunt molestias ducimus eaque necessitatibus corrupti.",
+         descripcion: "Ea tenetur rerum ut ut deleniti aliquam. Temporibus sit molestiae modi ut ducimus et. Dolore consequuntur rerum placeat. Excepturi sint facere dolorem pariatur quasi maiores.",
+       },
+       App\Models\Curso {#4554
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+       },
+       App\Models\Curso {#4555
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+       },
+       App\Models\Curso {#4556
+         name: "Et doloribus eligendi aspernatur laboriosam est.",
+         descripcion: "Eum mollitia esse a occaecati ut omnis. Et quia ipsam nisi voluptates. Repellat nobis nam tenetur earum qui dolor similique qui.",
+       },
+       App\Models\Curso {#4557
+         name: "Et ipsa nostrum aut perspiciatis.",
+         descripcion: "Numquam laudantium voluptatum at et temporibus. Natus atque eum vel enim suscipit corrupti ex ut. Non tenetur adipisci magnam consequuntur.",
+       },
+       App\Models\Curso {#4558
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+       },
+       App\Models\Curso {#4559
+         name: "Ex error non deleniti rerum officiis aut.",
+         descripcion: "Eligendi nihil unde voluptatem eos. Ducimus praesentium pariatur nihil eveniet asperiores. Ut nihil sint molestiae libero. Ab quisquam minus natus quisquam est voluptatem non.",
+       },
+       App\Models\Curso {#4560
+         name: "Facere aliquam optio enim sequi minima.",
+         descripcion: "Optio est rem numquam tempora vel non. Illo officia doloribus ex ut inventore nisi facere. Molestiae ipsa consequatur dicta necessitatibus consequatur dignissimos velit et.",
+       },
+       App\Models\Curso {#4561
+         name: "Facere aperiam laborum officiis sit sit veniam impedit.",
+         descripcion: "Facere rerum cupiditate soluta quo sed. Est nobis laudantium eius rerum atque quia asperiores. Aliquam voluptas voluptatem ut corporis ipsum culpa. Sint vero rerum ducimus nisi incidunt et.",
+       },
+       App\Models\Curso {#4562
+         name: "Illo quae amet delectus sed.",
+         descripcion: "Dolor nam et ab quas soluta rem. Error voluptate consectetur amet. Mollitia distinctio culpa suscipit ad molestiae. Aliquam ratione recusandae ea quod error nulla.",
+       },
+       App\Models\Curso {#4563
+         name: "Incidunt velit ut ea dolore incidunt non.",
+         descripcion: "Impedit nam eum omnis veniam ad. Recusandae quis velit dolore illo laudantium qui. Dolor harum et ut corporis qui sit tenetur.",
+       },
+       App\Models\Curso {#4564
+         name: "Ipsam nihil dolorum provident neque.",
+         descripcion: "Unde qui non enim repellat enim fugiat amet. Ut in est ab consequatur. Quis neque voluptatum eius eum rerum pariatur optio. Et tempora ad et qui quasi est.",
+       },
+       App\Models\Curso {#4565
+         name: "Ipsum neque similique totam voluptatem qui aliquid aperiam autem.",
+         descripcion: "Nulla et dicta eum. Quidem consequatur ipsa officia maiores facere id. Eum excepturi perferendis qui.",
+       },
+       App\Models\Curso {#4566
+         name: "Ipsum non et earum quis.",
+         descripcion: "Sapiente quis similique deserunt facilis iusto unde. Voluptatem a quia nesciunt temporibus.",
+       },
+       App\Models\Curso {#4567
+         name: "Laboriosam dolor molestiae possimus fugiat.",
+         descripcion: "Doloribus expedita dolores rerum. Impedit qui ullam voluptas itaque. Nam sunt magni adipisci et.",
+       },
+       App\Models\Curso {#4568
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+       },
+       App\Models\Curso {#4569
+         name: "Molestiae vel perspiciatis magni in voluptate minima deleniti.",
+         descripcion: "Architecto perspiciatis pariatur at rerum error et suscipit. Voluptas ducimus sed quae maiores eius. Distinctio commodi quas aut deserunt.",
+       },
+       App\Models\Curso {#4570
+         name: "Nisi dolorum et omnis labore facilis nulla dolorem sint.",
+         descripcion: "Nam ut aperiam quos aut culpa. Et et magnam exercitationem perferendis itaque maxime. Modi laudantium aut illum sed.",
+       },
+       App\Models\Curso {#4571
+         name: "Non blanditiis tempore voluptatem accusantium sunt a.",
+         descripcion: "Minima rerum veritatis et dolorem quaerat ipsam in. Est error quam possimus temporibus quibusdam voluptatem. Iste eos et non nostrum. Suscipit corporis omnis earum deserunt autem et recusandae.",
+       },
+       App\Models\Curso {#4572
+         name: "Non quo suscipit quaerat ipsum reiciendis.",
+         descripcion: "Repudiandae ullam ducimus facere in. Ea minus accusantium qui ipsa maiores numquam inventore. Voluptatum et nesciunt natus illum enim.",
+       },
+       App\Models\Curso {#4573
+         name: "Non ullam quae velit ipsam veniam minus aut.",
+         descripcion: "Voluptatibus sapiente ut molestiae quos et numquam ad. Qui aut
+aut eius tempora dolores commodi fugit. Numquam voluptatem iste fugit suscipit.",
+       },
+       App\Models\Curso {#4574
+         name: "Nulla quam quidem nisi autem in voluptatem accusamus.",
+         descripcion: "Ipsa aliquid sint facilis perspiciatis. Explicabo deleniti qui
+dolore repellendus deleniti consequatur. Magnam culpa dicta facere ut. Dolore vel molestias nesciunt sed consequatur aut harum.",
+       },
+       App\Models\Curso {#4575
+         name: "Optio optio veritatis natus ea autem quidem.",
+         descripcion: "Voluptatem non illo quidem aliquam adipisci et. Aut iure molestias aliquid quia quam dolorem sint soluta. Omnis est voluptatibus quia ad aut excepturi maxime. Voluptatem nobis labore necessitatibus minus qui. Voluptas a est asperiores
+aliquam hic ut omnis impedit.",
+       },
+       App\Models\Curso {#4576
+         name: "Praesentium velit odit asperiores saepe deserunt nam occaecati.",
+         descripcion: "Quibusdam et ea est aspernatur. Cumque aut officiis quisquam doloribus consequuntur quia est et. Maiores fugiat esse qui dolorem laborum sed velit itaque.",
+       },
+       App\Models\Curso {#4577
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+       },
+       App\Models\Curso {#4578
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+       },
+       App\Models\Curso {#4579
+         name: "Quia quis id occaecati commodi dolores architecto harum deleniti.",
+         descripcion: "Et harum assumenda minus et. Sapiente corporis delectus laudantium id cum eveniet. Nihil quo vel minus tempore aperiam inventore et.",
+       },
+       App\Models\Curso {#4580
+         name: "Quisquam eligendi asperiores et est.",
+         descripcion: "Porro odit nulla sed et neque. Optio architecto iure et et et.
+Tempore cum dignissimos maxime voluptatem dolorum provident. Vitae ut deleniti harum odit beatae consequatur nulla in.",
+       },
+       App\Models\Curso {#4581
+         name: "Ratione nobis dolorem perferendis ut laborum autem ut.",
+         descripcion: "Velit deleniti et dolor nihil veritatis odio qui. Voluptate quaerat repellendus fugit sint.",
+       },
+       App\Models\Curso {#4582
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+       },
+       App\Models\Curso {#4583
+         name: "Similique nostrum voluptatibus quo qui distinctio mollitia.",
+         descripcion: "Asperiores occaecati quidem et. In qui dolorem culpa rerum tempora ea. Assumenda asperiores recusandae aut autem nulla autem.",
+       },
+       App\Models\Curso {#4584
+         name: "Sit id iure similique dicta enim.",
+         descripcion: "Recusandae aut qui consequatur vel natus aut. Repellat iusto corporis harum ut dolor. Eveniet voluptates consequatur provident.",
+       },
+       App\Models\Curso {#4585
+         name: "Tempora et omnis eos.",
+         descripcion: "Ut quos libero molestias et voluptas voluptatem mollitia. At beatae natus ipsum quia quasi ut non. Placeat sed ut ut sequi aut.",
+       },
+       App\Models\Curso {#4586
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+       },
+       App\Models\Curso {#4587
+         name: "Ut quidem nisi eius.",
+         descripcion: "Dicta sint illo sint placeat saepe asperiores quidem eaque. Facere deleniti veritatis aut voluptas quia animi et optio. Quasi fugit sit alias at. Laudantium quo et quis et qui ipsum.",
+       },
+       App\Models\Curso {#4588
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+       },
+       App\Models\Curso {#4589
+         name: "Voluptatum dolores velit voluptates rem nihil et quis.",
+         descripcion: "Dicta quo et iure. Sint quia suscipit necessitatibus ea illum amet itaque ipsa. Nulla voluptate deleniti quasi voluptas consequatur aut.",
+       },
+     ],
+   }
+>>> $cursos = Curso::select('name','descripcion')->orderBy('name','asc')->where('categoria','Diseño web')->get();
+=> Illuminate\Database\Eloquent\Collection {#4512
+     all: [
+       App\Models\Curso {#4442
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+       },
+       App\Models\Curso {#4441
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+       },
+       App\Models\Curso {#3508
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+       },
+       App\Models\Curso {#4438
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+       },
+       App\Models\Curso {#3504
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+       },
+       App\Models\Curso {#4440
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+       },
+       App\Models\Curso {#3510
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+       },
+       App\Models\Curso {#4225
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+       },
+       App\Models\Curso {#4188
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+       },
+       App\Models\Curso {#4226
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+       },
+       App\Models\Curso {#4292
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+       },
+       App\Models\Curso {#4435
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+       },
+       App\Models\Curso {#3828
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+       },
+       App\Models\Curso {#4471
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+       },
+       App\Models\Curso {#4470
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+       },
+       App\Models\Curso {#4468
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+       },
+       App\Models\Curso {#4477
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+       },
+       App\Models\Curso {#4478
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+       },
+       App\Models\Curso {#4479
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+       },
+     ],
+   }
+>>> $cursos = Curso::select('name','descripcion', 'categoria')->orderBy('name','asc')->where('categoria','Diseño web')->get();
+=> Illuminate\Database\Eloquent\Collection {#4538
+     all: [
+       App\Models\Curso {#4566
+         name: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4562
+         name: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4561
+         name: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4560
+         name: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4559
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4558
+         name: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4557
+         name: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4556
+         name: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4555
+         name: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4554
+         name: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4553
+         name: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4552
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4551
+         name: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4550
+         name: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4549
+         name: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4548
+         name: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4547
+         name: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4546
+         name: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4545
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+       },
+     ],
+   }
+>>> $cursos = Curso::select('name as title','descripcion', 'categoria')->orderBy('name','asc')->where('categoria','Diseño web')->get();
+=> Illuminate\Database\Eloquent\Collection {#4589
+     all: [
+       App\Models\Curso {#4567
+         title: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4571
+         title: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4572
+         title: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4573
+         title: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4574
+         title: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4575
+         title: "Autem omnis delectus illum a aperiam rem necessitatibus.",
+         descripcion: "Voluptates reiciendis a accusantium expedita beatae eveniet dolor. Corrupti ducimus mollitia iusto in velit. Nihil voluptate accusantium molestiae sunt voluptas et esse. A dolores consequuntur aliquid sapiente dolorem eius velit.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4576
+         title: "Consequatur maiores doloribus dolorem placeat sit.",
+         descripcion: "Sed ipsum exercitationem et veritatis accusamus ut quasi. Qui error dignissimos qui aut. Eaque sunt sit pariatur et et id.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4577
+         title: "Corporis recusandae magni consectetur quae enim.",
+         descripcion: "Et assumenda architecto eos quia quo enim. Et tempore ipsa et alias. Accusantium corporis aut maiores.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4578
+         title: "Debitis dolorem tempore cum doloremque nam vitae.",
+         descripcion: "Vel quas at excepturi. Sunt sunt itaque dolore quibusdam. Assumenda aut error mollitia.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4579
+         title: "Dicta fugit nulla rerum.",
+         descripcion: "Excepturi molestiae dolorum et et necessitatibus earum. Laborum tempora et placeat placeat eos voluptatibus. Quas suscipit ipsa necessitatibus quia quia omnis. Et neque est eum qui dolor voluptatem. Repellat exercitationem quasi illum
+adipisci sint.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4580
+         title: "Enim vel explicabo magni quaerat.",
+         descripcion: "Ea officiis sed voluptate aut blanditiis. Qui quia non qui eaque officiis voluptates aut. Praesentium velit ut assumenda.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4581
+         title: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4583
+         title: "Et sapiente non consectetur commodi similique consequatur.",
+         descripcion: "Occaecati eum nam inventore. Itaque blanditiis iusto id iste. Quo ea adipisci quas.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4518
+         title: "Maxime est ut voluptas necessitatibus porro cupiditate.",
+         descripcion: "Accusantium quia modi at corrupti velit ut sequi aut. Et qui cupiditate vel amet repellendus omnis. Perferendis quis harum tempore. Impedit et ipsam
+optio perferendis expedita est.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4585
+         title: "Quia amet in quibusdam accusantium.",
+         descripcion: "Cum rem cupiditate error est. Eveniet repudiandae possimus nihil doloribus. Amet autem libero officiis quisquam. Facere et aliquam provident et libero voluptatibus.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4582
+         title: "Quia hic non eligendi deleniti et at.",
+         descripcion: "Repellat hic laborum sequi in. Voluptate neque itaque consequatur distinctio debitis blanditiis. Praesentium assumenda voluptatem perferendis commodi et voluptatem dolores in. Voluptas nemo hic et amet pariatur nisi.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4587
+         title: "Rerum ex delectus rerum aut ad.",
+         descripcion: "Similique quo qui quae sed laborum consequatur suscipit. Magnam sed cum quis. Eum dolor suscipit eius quibusdam.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4586
+         title: "Ut commodi ut eum esse est autem.",
+         descripcion: "Totam temporibus laborum sint. At aut non ut nesciunt. Ipsum aperiam ut dolor corrupti praesentium. Beatae blanditiis dicta voluptatem molestias.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4544
+         title: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+       },
+     ],
+   }
+>>> $cursos = Curso::select('name as title','descripcion', 'categoria')->orderBy('name','asc')->where('categoria','Diseño web')->take(5)->get();
+=> Illuminate\Database\Eloquent\Collection {#4551
+     all: [
+       App\Models\Curso {#4553
+         title: "Accusamus nihil voluptatem eum omnis consequatur quaerat illum assumenda.",
+         descripcion: "Officiis nostrum error rerum nobis dolorum alias unde. Ad aut enim libero est voluptas.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4554
+         title: "Animi unde at aut quas enim totam tenetur.",
+         descripcion: "Distinctio enim vel ut et mollitia possimus. Placeat distinctio iure soluta sed enim eveniet odit. Non tempora tenetur aut dolores qui nobis impedit.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4555
+         title: "Aperiam et sit molestiae at qui omnis similique.",
+         descripcion: "In quasi molestiae quasi. Voluptas eveniet sit architecto nam distinctio quibusdam earum. Dolor voluptatem nobis praesentium adipisci sapiente quidem. Sint natus voluptas voluptate corrupti ea est. Nulla nulla aperiam error exercitationem tempore qui qui.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4556
+         title: "Aut repellat voluptatum esse adipisci autem porro.",
+         descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+         categoria: "Diseño web",
+       },
+       App\Models\Curso {#4557
+         title: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+       },
+     ],
+   }
+>>> $curso = Curso::where('name','Autem error pariatur molestias autem et numquam.')->get();
+=> Illuminate\Database\Eloquent\Collection {#4589
+     all: [
+       App\Models\Curso {#4580
+         id: 40,
+         name: "Autem error pariatur molestias autem et numquam.",
+         descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae
+laudantium dolorem porro quibusdam nihil modi maiores.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>> $curso = Curso::where('name','Autem error pariatur molestias autem et numquam.')->first();
+=> App\Models\Curso {#4581
+     id: 40,
+     name: "Autem error pariatur molestias autem et numquam.",
+     descripcion: "Omnis omnis molestias optio et voluptas dignissimos. Molestiae laudantium dolorem porro quibusdam nihil modi maiores.",
+     categoria: "Diseño web",
+     created_at: "2022-02-23 00:05:44",
+     updated_at: "2022-02-23 00:05:44",
+   }
+>>> $curso->name;
+=> "Autem error pariatur molestias autem et numquam."
+>>> $curso = Curso::where('id', 5)->first();
+=> App\Models\Curso {#4577
+     id: 5,
+     name: "Aut repellat voluptatum esse adipisci autem porro.",
+     descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+     categoria: "Diseño web",
+     created_at: "2022-02-23 00:05:40",
+     updated_at: "2022-02-23 00:05:40",
+   }
+>>> $curso = Curso::find(5);
+=> App\Models\Curso {#4587
+     id: 5,
+     name: "Aut repellat voluptatum esse adipisci autem porro.",
+     descripcion: "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut.",
+     categoria: "Diseño web",
+     created_at: "2022-02-23 00:05:40",
+     updated_at: "2022-02-23 00:05:40",
+   }
+>>> $curso->descripcion;
+=> "Totam incidunt quia id quo ad aut aspernatur. Nostrum reprehenderit delectus ut et et. Vel accusantium reiciendis voluptatem temporibus cupiditate beatae corrupti. Ut aliquid dolor numquam dolor esse veritatis ut."
+>>> $cursos = Curso::where('id', '>', 45)->get();
+=> Illuminate\Database\Eloquent\Collection {#4518
+     all: [
+       App\Models\Curso {#4580
+         id: 46,
+         name: "Quia quis id occaecati commodi dolores architecto harum deleniti.",
+         descripcion: "Et harum assumenda minus et. Sapiente corporis delectus laudantium id cum eveniet. Nihil quo vel minus tempore aperiam inventore et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4588
+         id: 47,
+         name: "Facere aperiam laborum officiis sit sit veniam impedit.",
+         descripcion: "Facere rerum cupiditate soluta quo sed. Est nobis laudantium eius rerum atque quia asperiores. Aliquam voluptas voluptatem ut corporis ipsum culpa. Sint vero rerum ducimus nisi incidunt et.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4545
+         id: 48,
+         name: "Voluptatem esse tempora unde in est.",
+         descripcion: "Ipsam inventore architecto temporibus dolores. Enim quia hic quis vel deleniti laudantium veritatis. Aut facere et id amet voluptates est.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4549
+         id: 49,
+         name: "Ipsum neque similique totam voluptatem qui aliquid aperiam autem.",
+         descripcion: "Nulla et dicta eum. Quidem consequatur ipsa officia maiores facere id. Eum excepturi perferendis qui.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+       App\Models\Curso {#4548
+         id: 50,
+         name: "Culpa quia nostrum dicta libero reiciendis et tempore.",
+         descripcion: "Excepturi sequi itaque totam officia doloribus neque quibusdam
+harum. Et qui facilis voluptatibus optio nisi aperiam. Officia temporibus suscipit provident voluptas.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>> $cursos = Curso::where('name', 'like', '% quia %')->get();
+=> Illuminate\Database\Eloquent\Collection {#4544
+     all: [
+       App\Models\Curso {#4545
+         id: 27,
+         name: "Esse quia deleniti ab est inventore rerum ducimus.",
+         descripcion: "Voluptatem aut ut ea accusamus earum sit molestiae eos. Eveniet amet quia et neque. Similique optio voluptas et voluptatem repellat.",
+         categoria: "Diseño web",
+         created_at: "2022-02-23 00:05:42",
+         updated_at: "2022-02-23 00:05:42",
+       },
+       App\Models\Curso {#4518
+         id: 50,
+         name: "Culpa quia nostrum dicta libero reiciendis et tempore.",
+         descripcion: "Excepturi sequi itaque totam officia doloribus neque quibusdam
+harum. Et qui facilis voluptatibus optio nisi aperiam. Officia temporibus suscipit provident voluptas.",
+         categoria: "Desarrollo Web",
+         created_at: "2022-02-23 00:05:44",
+         updated_at: "2022-02-23 00:05:44",
+       },
+     ],
+   }
+>>>
+
+
+
+
+
+
+
