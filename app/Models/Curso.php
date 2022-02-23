@@ -11,4 +11,7 @@ class Curso extends Model
 
     // // Ignora la convención para administrar la tabla users
     // protected $table = "users";
+
+    // protected $fillable = ['name', 'descripcion', 'categoria'];
+    protected $guarded = [];
 }
