@@ -24,9 +24,9 @@ Route::get('/', HomeController::class);
 
 // Novedad Laravel 9
 Route::controller(CursoController::class)->group(function() {
-    Route::get('cursos','index');
-    Route::get('cursos/create', 'create');
-    Route::get('cursos/{curso}','show');
+    Route::get('cursos','index')->name('cursos.index');
+    Route::get('cursos/create', 'create')->name('cursos.create');
+    Route::get('cursos/{id}','show')->name('cursos.show');
 });
 
 // Route::get('cursos', [CursoController::class, 'index']);
@@ -47,7 +47,7 @@ Route::controller(CursoController::class)->group(function() {
 // //     return "Bienvenido al curso: $curso";
 // // });
 
-//                          //puede ser opcional la variable categoria?
+//              //puede ser opcional la variable categoria?
 // // Route::get('cursos/{curso}/{categoria?}', function ($curso, $categoria = null) {
 // //     if($categoria) {
 // //         return "Bienvenido al curso $curso, de la categoría $categoria";

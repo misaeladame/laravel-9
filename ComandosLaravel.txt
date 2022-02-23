@@ -2025,6 +2025,11 @@ Psy Shell v0.11.1 (PHP 8.1.2 — cli) by Justin Hileman
 
 
 
+http://blog.test/cursos?page=2
+http://blog.test/cursos?page=3
+
+
+
 
 
 
