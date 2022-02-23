@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Curso;
 
 
 class DatabaseSeeder extends Seeder
@@ -15,32 +16,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
 
-        // $curso = new Curso();
+        // // $curso = new Curso();
 
-        // $curso->name = "Laravel";
-        // $curso->descripcion = "El mejor framework de PHP";
-        // $curso->categoria = "Desarrollo Web";
+        // // $curso->name = "Laravel";
+        // // $curso->descripcion = "El mejor framework de PHP";
+        // // $curso->categoria = "Desarrollo Web";
 
-        // $curso->save();
+        // // $curso->save();
 
-        // $curso2 = new Curso();
+        // // $curso2 = new Curso();
 
-        // $curso2->name = "Laravel";
-        // $curso2->descripcion = "El mejor framework de PHP";
-        // $curso2->categoria = "Desarrollo Web";
+        // // $curso2->name = "Laravel";
+        // // $curso2->descripcion = "El mejor framework de PHP";
+        // // $curso2->categoria = "Desarrollo Web";
 
-        // $curso2->save();
+        // // $curso2->save();
 
-        // $curso3 = new Curso();
+        // // $curso3 = new Curso();
 
-        // $curso3->name = "Laravel";
-        // $curso3->descripcion = "El mejor framework de PHP";
-        // $curso3->categoria = "Desarrollo Web";
+        // // $curso3->name = "Laravel";
+        // // $curso3->descripcion = "El mejor framework de PHP";
+        // // $curso3->categoria = "Desarrollo Web";
 
-        // $curso3->save();
+        // // $curso3->save();
 
-        $this->call(CursoSeeder::class);
+        // $this->call(CursoSeeder::class);
+
+        Curso::factory(50)->create();
     }
 }

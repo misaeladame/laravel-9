@@ -182,9 +182,18 @@ $this->call(CursoSeeder::class);
 
 php artisan migrate:fresh --seed
 
---O también
 php artisan migrate --seed
 
+php artisan migrate:fresh --seed
 
+php artisan make:factory CursoFactory
+-- Eliminar el archivo CursoFactory.php
+php artisan make:factory CursoFactory --model=Curso
+
+
+php artisan migrate:fresh --seed
+
+
+php artisan migrate:fresh --seed
 
 
