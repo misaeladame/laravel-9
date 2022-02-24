@@ -23,16 +23,22 @@ Route::get('/', HomeController::class);
 // });
 
 // Novedad Laravel 9
-Route::controller(CursoController::class)->group(function() {
-    Route::get('cursos','index')->name('cursos.index');
-    Route::get('cursos/create', 'create')->name('cursos.create');
-    Route::post('cursos', 'store')->name('cursos.store');
-    Route::get('cursos/{curso}','show')->name('cursos.show');
-                        //$id
-    Route::get('cursos/{curso}/edit', 'edit')->name('cursos.edit');
-    Route::put('cursos/{curso}', 'update')->name('cursos.update');
-    Route::delete('cursos/{curso}', 'destroy')->name('cursos.destroy');
-});
+// Route::controller(CursoController::class)->group(function() {
+//     Route::get('cursos','index')->name('cursos.index');
+//     Route::get('cursos/create', 'create')->name('cursos.create');
+//     Route::post('cursos', 'store')->name('cursos.store');
+//     Route::get('cursos/{curso}','show')->name('cursos.show');
+//                         //$id
+//     Route::get('cursos/{curso}/edit', 'edit')->name('cursos.edit');
+//     Route::put('cursos/{curso}', 'update')->name('cursos.update');
+//     Route::delete('cursos/{curso}', 'destroy')->name('cursos.destroy');
+// });
+
+Route::resource('cursos', CursoController::class);
+
+// Por si requieres cambiar el nombre de una ruta
+// Route::resource('asignaturas', CursoController::class)->parameters(['asignaturas' => 'curso'])->names('cursos');
+
 
 // Route::get('cursos', [CursoController::class, 'index']);
 

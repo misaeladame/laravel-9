@@ -2041,3 +2041,5 @@ https://github.com/Laraveles/spanish
 -- Crear un Form Request
 php artisan make:request StoreCurso
 
+-- Las rutas que tiene tu web.php
+php artisan r:l
