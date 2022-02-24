@@ -2049,4 +2049,7 @@ php artisan r:l
 -- Volver a migrar con los seeders
 php artisan migrate:fresh --seed
 
+-- emails de prueba
+https://mailtrap.io/
+
 
