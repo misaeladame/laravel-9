@@ -10,7 +10,6 @@
             <li>
                 <a href="{{route('cursos.show', $curso)}}">{{ $curso->name }}</a>
             </li>
-            {{route('cursos.show', $curso)}}
         @endforeach
     </ul>
 

@@ -8,14 +8,26 @@
     <!-- favicon -->
     <!-- estilos -->
 
+    <style>
+        .active {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 </head>
 <body>
     <!-- header -->
+    @include('layouts.partials.header')
+
     <!-- nav -->
+
     @yield('content')
 
     <!-- footer -->
+    @include('layouts.partials.footer')
+
 
     <!-- script -->
 
