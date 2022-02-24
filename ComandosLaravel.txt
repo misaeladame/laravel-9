@@ -2043,3 +2043,10 @@ php artisan make:request StoreCurso
 
 -- Las rutas que tiene tu web.php
 php artisan r:l
+
+
+
+-- Volver a migrar con los seeders
+php artisan migrate:fresh --seed
+
+
