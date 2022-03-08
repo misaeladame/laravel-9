@@ -2053,6 +2053,9 @@ php artisan migrate:fresh --seed
 https://mailtrap.io/
 
 
+-- crear mailable
+php artisan make:mail ContactanosMailable
+
 -- crear controlador
 php artisan make:controller ContactanosController
 
